@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a GIT</title>
+    <style>
+        body{background-color: rgba(218, 165, 32, 0.5);
+         }
+        code {color:blue; font-weight: bold;}
+        a {color : darkslategrey; text-decoration: none;font-weight: bold;
+        text-transform: uppercase;
+        }
+        a:hover {text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h1>GIT</h1>
+    <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+    <ul>
+        <li>sistema de controlo de versões</li>
+        <li>gratuito</li>
+        <li>open source</li>
+        <li>rápido</li>
+        <li>sistema distribuido, ou seja, cada utilizador pode ter uma cópia do repositório localmente</li>
+        <li>é o mais utilizado</li>
+    </ul>
+    <p>comando para ver se temos instualado e qual a versão:<code>git --version</code></p>
+    <p>para iniciar um repositório local <code>git init</code></p>
+    <p>para consultar o status dos ficheiros: <code> git status </code></p>
+    <p>para adicionar ficheiro ao staging area /index /área de preparação: <code>git add intro_git.html</code></p>
+    <p><code>git add ficheiro 1 ficheiro 2</code></p>
+    <p><code>git add .</code></p>
+    <p>quando for para guardar uma versão do programa / fazer commit / efetuar snapshot:</p>
+        <code> git commit - m "pequena descrição" </code>
+    <img src="img/staging_area.png" width="500" style="display:inline-block;margin:auto">
+    <br>
+    <p>para ver o historico de commits: <code>git log</code></p>
+    <p><code>git log --oneline -graph</code></p>
+    <h2>ramificação do código</h2>
+    <p>listar os ramos/branch em qual estamos <code>git branch</code></p>
+    <p>criar uma nova ramificação / branch <code>git branch nomeramo</code></p>
+    <p>para trocar de ramo: <code> git switch</code></p>
+    <p>para efetuar o merge <code>git merge nomebranch</code></p>
+    <img src = "img/git_branch.svg" width="600">
+    <br>
+    <h2>Livro</h2>
+    <a href = "files/progit.pdf">livro Apress - PRO GIT</a>
+    <br><br>
+    <a href ="files/github-git-cheat-sheet_ING.pdf">Github Cheat Sheet</a>
+    <br><br>
+    <a href = "files/github-git-cheat-sheet_PT.pdf">FOLHETO DE AJUDA PARA GIT do GITHUB</a>
+    <br><br>
+    <p>para remover um ficheiro do staging area:(o contrario de git add nomeficheiro) 
+        <code>git restore --staged nomeficheiro</code>
+    </p>
+    <p>para ver diferenças entre versões: <code>git diff</code></p>
+</body>
+</html>
