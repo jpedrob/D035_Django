@@ -1,2 +1,4 @@
 # D035_Django
-Projeto Django 20233
+Projeto Django 2023
+Tema por definir!
+IEFP 
